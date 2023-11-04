@@ -1,32 +1,4 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.profile {
-  height: 16em;
-  will-change: filter;
-  transition: filter 300ms;
-  border-radius: 50%;
-}
-.profile:hover {
-  filter: drop-shadow(0 0 2em #35060b);
-}
-
-.description {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-@media (max-width: 768px) {
-  .description {
-    padding-left: 0rem;
-    padding-right: 0rem;
-  }
+  margin: 0;
+  padding: 0;
 }
