@@ -1,17 +1,14 @@
 import { Theme, useMediaQuery } from "@mui/material";
-import "./index.css";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import useWindowDimensions from "../../utils/windowDimensions";
 
 export default function GalleryPage() {
-  const isSmall = useMediaQuery<Theme>((theme) => theme.breakpoints.up("sm"));
-  // const { height, width } = useWindowDimensions();
-  const rows = isSmall ? 5 : 3;
+  const isSm = useMediaQuery<Theme>((theme) => theme.breakpoints.up("sm"));
+  const cols = isSm ? 5 : 3;
 
   return (
     <section id="sectionGallery">
-      <ImageList sx={{ m: 0 }} cols={rows}>
+      <ImageList sx={{ m: 0 }} cols={cols}>
         {itemData.map((item) => (
           <ImageListItem key={item.id}>
             <img

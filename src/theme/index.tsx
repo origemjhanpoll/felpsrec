@@ -1,14 +1,4 @@
-import { alpha, createTheme } from "@mui/material/styles";
-
-declare module "@mui/material/styles" {
-  interface Palette {
-    appbar: Palette["primary"];
-  }
-
-  interface PaletteOptions {
-    appbar?: PaletteOptions["primary"];
-  }
-}
+import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
   typography: {
@@ -16,22 +6,14 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      light: "#757ce8",
-      main: "#F4D955",
-      dark: "#002884",
-      contrastText: "#fff",
+      light: "#ce6468",
+      main: "#CA2B30",
+      dark: "#070b0f",
+      contrastText: "#f8f8f8",
     },
-    secondary: {
-      light: "#ff7961",
-      main: "#ffffff",
-      dark: "#ba000d",
-      contrastText: "#000",
-    },
-    appbar: {
-      main: "#121B1C",
-      dark: "#0C1112",
-      light: "#C1C0BB",
-      // red: "red",
+    text: {
+      primary: "#ffffff",
+      secondary: "#FFFFFF99",
     },
   },
 });
